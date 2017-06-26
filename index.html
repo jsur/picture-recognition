@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drawing recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/iziToast.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="overlay-text-container">
+        <h1>Let's draw with Google!</h1>
+        <p id="message1"></p>
+        <button class="green-button ok-button" type="button" name="ok-button">Got it!</button>
+        <audio id="audio-intro" controls autoplay loop src="./music/the-moon.mp3"></audio>
+      </div>
+      <p class="copyright">Copyright Google. This page is based on quickdraw.withgoogle.com</p>
+    </div>
+    <div class="victory">
+      <h2>You got 15 points! You win!</h2>
+      <p>Visit <a href="https://quickdraw.withgoogle.com">quickdraw</a></p>
+      <p>for the original implementation.</p>
+      <p>Thank you for playing.</p>
+    </div>
+    <div class="gameover">
+      <div class="overlay-text-container">
+        <p>You fail!</p>
+        <p>Try again?</p>
+        <button class="green-button retry-button" type="button" name="retry">Sure.</button>
+      </div>
+    </div>
+    <div class="content-container">
+      <nav class="nav">
+        <div class="point-container">
+          <p id="pointstext">Points: 0</p>
+          <p id="difficultytext">Difficulty: Easy</p><span class="doomguy"></span>
+        </div>
+        <div class="header-container">
+          <h2>Let's draw with Google!</h2>
+          <h2 class="drawthis">Draw this: <span id="picture"></span></h2>
+          <div class="countdown"></div>
+        </div>
+        <div class="button-container">
+          <button class="green-button clear" type="button" name="clean">Clear canvas</button>
+        </div>
+      </nav>
+      <div class="canvas-container">
+        <canvas id="canvas" width="600" height="600"></canvas>
+      </div>
+      <audio id="audio-ingame" controls loop src="./music/silius.mp3"></audio>
+      <audio id="audio-effect" controls src="./music/20H.wav"></audio>
+      <audio id="audio-fail" controls src="./music/fail.wav"></audio>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/iziToast.min.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/actions.js"></script>
+  </body>
+</html>
