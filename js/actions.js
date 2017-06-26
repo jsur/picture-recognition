@@ -12,6 +12,7 @@ $(function() {
     $('.doomguy').css('width', '128px');
     $('content-container').css('display', 'none');
     $('audio').css('display', 'none');
+    $('button').css('display', 'none');
     intro.pause();
   }
 
