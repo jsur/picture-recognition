@@ -10,6 +10,8 @@ $(function() {
     $('.doomguy').css('display', 'block');
     $('.doomguy').css('height', '128px');
     $('.doomguy').css('width', '128px');
+    $('content-container').css('display', 'none');
+    $('audio').css('display', 'none');
     intro.pause();
   }
 
