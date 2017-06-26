@@ -185,7 +185,11 @@ nav {
 }
 
 .gameover p {
-  margin: 5% 35%;
+  margin: 0 35%;
+}
+
+#pointsscored {
+  margin-left: 28%;
 }
 
 .no-mobile {

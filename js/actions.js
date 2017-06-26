@@ -199,6 +199,7 @@ function gameOver() {
   $('.gameover').css('display', 'block');
   var ingame = document.getElementById("audio-ingame");
   var fail = document.getElementById("audio-fail");
+  $('#pointsscored').html('You got: ' + points + (points === 1 ? ' point.' : ' points.'));
   ingame.pause();
   fail.play();
 }
