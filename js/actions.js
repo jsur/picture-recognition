@@ -13,6 +13,7 @@ $(function() {
     $('content-container').css('display', 'none');
     $('audio').css('display', 'none');
     $('button').css('display', 'none');
+    $('.ok-button').css('display', 'none');
     intro.pause();
   }
 
