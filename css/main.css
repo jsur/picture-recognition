@@ -33,7 +33,8 @@ nav {
 
 .overlay,
 .victory,
-.gameover {
+.gameover,
+.no-mobile {
   z-index: 1;
   position: absolute;
   height: 100vh;
@@ -185,4 +186,9 @@ nav {
 
 .gameover p {
   margin: 5% 35%;
+}
+
+.no-mobile {
+  display: none;
+  z-index: 2;
 }

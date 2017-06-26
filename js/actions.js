@@ -3,6 +3,16 @@ $(function() {
   var intro = document.getElementById("audio-intro");
   var ingame = document.getElementById("audio-ingame");
 
+  /* No mobile browser support */
+
+  if (/Mobi/.test(navigator.userAgent)) {
+    $('.no-mobile').css('display', 'block');
+    $('.doomguy').css('display', 'block');
+    $('.doomguy').css('height', '128px');
+    $('.doomguy').css('width', '128px');
+    intro.pause();
+  }
+
   showText("#message1", "You have 20 seconds to draw each picture. A Google neural network will try to guess what you are drawing. The API used is not public, so you may experience occasional choppiness. You will start with the easy difficulty level. Draw simple and large pictures. Good luck!", 0, 40);
 
   $('.ok-button').on('click', function(){
