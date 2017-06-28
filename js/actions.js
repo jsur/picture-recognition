@@ -54,6 +54,8 @@ var levelPics = {
 var drawableItem = drawingRandomizer(difficulty, levelPics);
 var points = 0;
 var successaudio = document.getElementById("audio-effect");
+var ingame = document.getElementById("audio-ingame");
+var victory = document.getElementById("audio-victory");
 var playSeconds = 21;
 var countdown;
 
@@ -85,6 +87,12 @@ var postDrawing =
         points += 1;
         if(points >= 15) {
           $('.victory').css('display', 'block');
+          successaudio.play();
+          showGoogleGuess(result, 'success');
+          ingame.pause();
+          victory.play();
+          clearInterval(countdown);
+          
         } else {
           $('#pointstext').html('Points: ' + points);
           toggleSuccess();
