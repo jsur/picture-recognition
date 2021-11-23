@@ -2,8 +2,6 @@ $(function() {
 
   var intro = document.getElementById("audio-intro");
   var ingame = document.getElementById("audio-ingame");
-  
-  intro.play();
 
   /* No mobile browser support */
 
